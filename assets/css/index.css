@@ -1,0 +1,18 @@
+@import "/assets/css/theme-toggle.css";
+
+:root {
+  --dark-mode-color: #fff;
+  --dark-mode-bg: #2a032e;
+  --dark-mode-bg-header: #3d0f3c;
+
+  --main-font: "Poppins", sans-serif;
+
+  --grid-unit: 1rem;
+  --border-radius-base: 0.5rem;
+  --size: 2rem;
+}
+
+[data-theme="dark"] {
+    --dark-background:#000;
+    --dark-color: #fff;
+}

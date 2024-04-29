@@ -1,0 +1,25 @@
+​​.sun-and-moon {
+  @media (--motionOK) {
+    & > .sun {
+      transition: transform 0.5s var(--ease-elastic-3);
+    }
+
+    & > .sun-beams {
+      transition: transform 0.5s var(--ease-elastic-4),
+        opacity 0.5s var(--ease-3);
+    }
+
+    @nest [data-theme="dark"] & {
+      & > .sun {
+        transform: scale(1.75);
+        transition-timing-function: var(--ease-3);
+        transition-duration: 0.25s;
+      }
+
+      & > .sun-beams {
+        transform: rotateZ(-25deg);
+        transition-duration: 0.15s;
+      }
+    }
+  }
+}

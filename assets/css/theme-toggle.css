@@ -1,0 +1,31 @@
+@import "/assets/css/index.css";
+
+.theme-toggle {
+    --size: 2rem;
+
+    background: none;
+    border: none;
+    padding: 0;
+
+    inline-size: var(--size);
+    block-size: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    cursor: pointer;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    outline-offset: 5px;
+
+    & > svg {
+        inline-size: 100%;
+        block-size: 100%;
+        stroke-linecap: round;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Adicionando estilos para o tema escuro */
+    &.dark > svg {
+        transform: rotate(180deg);
+    }
+}
